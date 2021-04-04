@@ -1,0 +1,198 @@
+
+
+
+JpMdFf.prototype.NAekoa = function() {
+    var bjJCfN = 0;
+    if (this.oeLiEE()) {
+        bjJCfN = 2;
+        if (this.eAeFAO.hJJlNP) {
+            bjJCfN = 3;
+        }
+    } else if (BLAZE.nhjLnH.lboAhk && this.eAeFAO.oLnMib) {
+        bjJCfN = 1;
+    }
+    bjJCfN = 3;
+    ;if (bjJCfN == 0) {
+        if (this.MKBPfJ) {
+            this.IHFOKF();
+        }
+        ;return;
+    }
+    ;amlClm = lJELmO.NoeNdn(this.FNNEFK);
+    MEaoDC = lJELmO.NoeNdn(this.JefDNA);
+    this.FMGaPH(MEaoDC);
+    podbCd = lJELmO.khOMcp(MEaoDC, amlClm);
+    EDdliE = HAELdp.BObpdE(lJELmO.PaaKha(podbCd) / dDFAkd * this.GJCkgG);
+    lJELmO.dbagEB(podbCd);
+    if (BLAZE.nhjLnH.lboAhk) {
+        MEaoDC = lJELmO.PAGKnH(podbCd, 20000000);
+        lJELmO.jeDgdF(MEaoDC, amlClm);
+    }
+    ;jGhjGb = [0];
+    if (bjJCfN == 1) {
+        oIieDj = true;
+    } else {
+        fBfhIC = lJELmO.NImECF(amlClm, MEaoDC);
+        eLAKFi = this.bHBDje.length - 1;
+        for (FdDBNA = 0; FdDBNA < eLAKFi; FdDBNA++) {
+            HnPGCc = this.japcEB(amlClm, MEaoDC, this.bHBDje[FdDBNA], this.bHBDje[FdDBNA + 1]);
+            if (HnPGCc) {
+                OdpkmM = lJELmO.NImECF(amlClm, HnPGCc);
+                if (OdpkmM < 0) {
+                    OdpkmM = 0;
+                }
+                ;if (fBfhIC > OdpkmM) {
+                    fBfhIC = OdpkmM;
+                    jGhjGb[0] = 1;
+                    jGhjGb[1] = this.bHBDje[FdDBNA];
+                    jGhjGb[2] = this.bHBDje[FdDBNA + 1];
+                    jGhjGb[3] = OdpkmM;
+                    jGhjGb[4] = HnPGCc;
+                    jGhjGb[5] = FdDBNA;
+                }
+            }
+            ;
+        }
+        ;if (bjJCfN == 3) {
+            var OPKHjd = this.kDBpDc(this.oKpmDB);
+            NOAbGk = OPKHjd[2];
+            lKclNn = fBfhIC;
+            fLoOmD = lJELmO.PAGKnH(podbCd, lKclNn);
+            dgcnik = lJELmO.mCMKjO(NOAbGk, fLoOmD);
+            bJefno = this.pPGclC;
+            GIgPag = bJefno.length;
+            for (OdjMli = 0; OdjMli < GIgPag; OdjMli++) {
+                Nhgpna = bJefno[OdjMli];
+                if (Nhgpna[1]) {
+                    if (Nhgpna[0] != this.oKpmDB) {
+                        KmkHIm = this.EgAJnM(fBfhIC, NOAbGk, dgcnik, fLoOmD, lKclNn, Nhgpna[2], Nhgpna[3]);
+                        if (KmkHIm) {
+                            fBfhIC = KmkHIm[0];
+                            jGhjGb[0] = 2;
+                            jGhjGb[1] = KmkHIm;
+                            jGhjGb[2] = Nhgpna;
+                        }
+                    }
+                    ;
+                }
+            }
+            ;
+        }
+        ;oIieDj = true;
+        if (jGhjGb[0] == 2) {
+            KmkHIm = jGhjGb[1];
+            MEaoDC = lJELmO.NoeNdn(KmkHIm[1]);
+            podbCd = lJELmO.khOMcp(MEaoDC, amlClm);
+            EDdliE = HAELdp.BObpdE(lJELmO.PaaKha(podbCd) / dDFAkd * this.GJCkgG);
+            lJELmO.dbagEB(podbCd);
+            lJELmO.dMdbkN(podbCd, dDFAkd);
+            oIieDj = false;
+            EPJHkf = this.DKElck.style;
+            EPJHkf.display = '';
+            this.DhcNbm(amlClm);
+            lJELmO.IFDeod(amlClm, this.LoELbN);
+            lJELmO.BObpdE(amlClm);
+            EPJHkf.left = amlClm[0] + 'px';
+            EPJHkf.top = amlClm[1] + 'px';
+            this.PbbfcC.style.width = EDdliE + 'px';
+            ggGkJc.nKCAoj(this.DKElck, lJELmO.IHmieI(podbCd));
+            EPJHkf = this.FpMEcj.style;
+            EPJHkf.display = '';
+            this.DhcNbm(MEaoDC);
+            lJELmO.IFDeod(MEaoDC, this.LoELbN);
+            lJELmO.BObpdE(MEaoDC);
+            EPJHkf.left = MEaoDC[0] + 'px';
+            EPJHkf.top = MEaoDC[1] + 'px';
+            ipgmHM = KmkHIm[2];
+            EObkea = HAELdp.BObpdE(lJELmO.PaaKha(ipgmHM));
+            this.KLGIdh.style.width = HAELdp.BObpdE((EObkea / lKclNn * 300) * this.GJCkgG) + 'px';
+            ggGkJc.nKCAoj(this.FpMEcj, lJELmO.IHmieI(ipgmHM));
+            EPJHkf = this.OcgFdh.style;
+            EPJHkf.display = '';
+            Nhgpna = jGhjGb[2];
+            MEaoDC = lJELmO.NoeNdn(Nhgpna[2]);
+            this.DhcNbm(MEaoDC);
+            lJELmO.IFDeod(MEaoDC, this.LoELbN);
+            lJELmO.BObpdE(MEaoDC);
+            EPJHkf.left = MEaoDC[0] + 'px';
+            EPJHkf.top = MEaoDC[1] + 'px';
+            ipgmHM = KmkHIm[3];
+            EObkea = HAELdp.BObpdE(lJELmO.PaaKha(ipgmHM));
+            this.GLcnGe.style.width = HAELdp.BObpdE((EObkea / lKclNn * 300) * this.GJCkgG) + 'px';
+            ggGkJc.nKCAoj(this.OcgFdh, lJELmO.IHmieI(ipgmHM));
+        } else if (jGhjGb[0] > 0) {
+            this.OcgFdh.style.display = 'none';
+            MEaoDC = jGhjGb[4];
+            if (jGhjGb[1][2] == 0 || jGhjGb[1][2] == null) {
+                podbCd = lJELmO.khOMcp(MEaoDC, amlClm);
+                EDdliE = HAELdp.BObpdE(lJELmO.PaaKha(podbCd) / dDFAkd * this.GJCkgG);
+                lJELmO.dbagEB(podbCd);
+                lJELmO.dMdbkN(podbCd, dDFAkd);
+                ipgmHM = this.iaGfJl(podbCd, jGhjGb[1], jGhjGb[2]);
+                IedkAJ = lJELmO.PAGKnH(ipgmHM, GdeJPB[0] * 2);
+                lJELmO.jeDgdF(IedkAJ, MEaoDC);
+                EPJHkf = jGhjGb[5];
+                fBfhIC = 99999999;
+                AapNgp = null;
+                for (FdDBNA = 0; FdDBNA < eLAKFi; FdDBNA++) {
+                    if (FdDBNA != EPJHkf) {
+                        HnPGCc = this.japcEB(MEaoDC, IedkAJ, this.bHBDje[FdDBNA], this.bHBDje[FdDBNA + 1]);
+                        if (HnPGCc) {
+                            OdpkmM = lJELmO.NImECF(MEaoDC, HnPGCc);
+                            if (OdpkmM < 0) {
+                                OdpkmM = 0;
+                            }
+                            ;if (fBfhIC > OdpkmM) {
+                                fBfhIC = OdpkmM;
+                                AapNgp = HnPGCc;
+                            }
+                        }
+                        ;
+                    }
+                }
+                ;if (AapNgp) {
+                    oIieDj = false;
+                    EPJHkf = this.DKElck.style;
+                    EPJHkf.display = '';
+                    this.DhcNbm(amlClm);
+                    lJELmO.IFDeod(amlClm, this.LoELbN);
+                    lJELmO.BObpdE(amlClm);
+                    EPJHkf.left = amlClm[0] + 'px';
+                    EPJHkf.top = amlClm[1] + 'px';
+                    this.PbbfcC.style.width = EDdliE + 'px';
+                    ggGkJc.nKCAoj(this.DKElck, lJELmO.IHmieI(podbCd));
+                    EPJHkf = this.FpMEcj.style;
+                    EPJHkf.display = '';
+                    this.DhcNbm(MEaoDC);
+                    lJELmO.IFDeod(MEaoDC, this.LoELbN);
+                    lJELmO.BObpdE(MEaoDC);
+                    EPJHkf.left = MEaoDC[0] + 'px';
+                    EPJHkf.top = MEaoDC[1] + 'px';
+                    this.KLGIdh.style.width = HAELdp.BObpdE(fBfhIC / dDFAkd * this.GJCkgG) + 'px';
+                    ggGkJc.nKCAoj(this.FpMEcj, lJELmO.IHmieI(ipgmHM));
+                }
+            }
+            ;
+        }
+    }
+    ;if (oIieDj) {
+        this.FpMEcj.style.display = 'none';
+        this.OcgFdh.style.display = 'none';
+        lJELmO.dMdbkN(podbCd, dDFAkd);
+        EPJHkf = this.DKElck.style;
+        EPJHkf.display = '';
+        this.DhcNbm(amlClm);
+        lJELmO.IFDeod(amlClm, this.LoELbN);
+        lJELmO.BObpdE(amlClm);
+        EPJHkf.left = amlClm[0] + 'px';
+        EPJHkf.top = amlClm[1] + 'px';
+        this.PbbfcC.style.width = EDdliE + 'px';
+        ggGkJc.nKCAoj(this.DKElck, lJELmO.IHmieI(podbCd));
+    }
+    ;this.MKBPfJ = true;
+}
+
+setInterval(function() {
+    document.querySelector('[data-id="collider_line"]').style.width="2000px"
+    document.querySelector('[data-id="end_line"]').style.width="2000px"
+}, 300);
